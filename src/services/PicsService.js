@@ -4,7 +4,7 @@ import { Pic } from "../models/Pic";
 import { nasaApi } from "./AxiosService";
 
 class PicsService{
-  async getPic(query) {
+  async getPic(query = '2021-08-03') {
   try {
     const res = await nasaApi.get('apod?api_key=2LVuMz526lpJ4dMM93iviJslsLFCVv5OGdzq1VXN&date='+ query)
     console.log(res.data)

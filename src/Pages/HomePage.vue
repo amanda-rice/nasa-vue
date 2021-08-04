@@ -1,11 +1,11 @@
 <template>
   <div class="HomePage container-fluid">
     <div class="row">
-      <div class="col-md-6">
-        <h1>Hello! A picture will go here!</h1>
-      </div>
-      <div class="col-md-6">
+      <div class="col-md-6 px-5">
           <PicSearch />
+      </div>
+      <div class="col-md-12">
+          <Pic />
       </div>
     </div>
   </div>
@@ -15,6 +15,7 @@
 <script>
  // import {reactive} from 'vue'
 import PicSearch from '../components/PicSearch.vue'
+import Pic from '../components/Pic.vue'
 export default {
   name: 'HomePage',
   setup(){
@@ -23,11 +24,11 @@ export default {
     // })
     return {}
   },
-  components:{PicSearch}
+  components:{PicSearch, Pic}
 }
 </script>
 
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

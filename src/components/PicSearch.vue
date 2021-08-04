@@ -1,8 +1,8 @@
 <template>
   <div class="PicSearch row">
     <form @submit.prevent="getPic">
-      <label for="picDay">Choose Date:</label>
-      <input v-model="state.query" type="date" id="picDay" name="picDay">
+      <label class="pr-2" for="picDay">Choose Date:</label>
+      <input class="mr-2" v-model="state.query" type="date" id="picDay" name="picDay" required>
       <button>Search</button>
     </form>
     <!-- <div v-for="m in movies" :key="m.id" class="col-12 movie" @click="setActiveMovie(m)">{{m.title}}</div> -->
